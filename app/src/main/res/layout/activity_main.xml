@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/aadhaar">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demographic Detail"
+        android:layout_gravity="center"
+        android:textSize="35sp"
+        android:fontFamily="cursive"
+        />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableRow android:layout_height="41dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME :"
+                android:textColor="#050505"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:hint="enter your name"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:id="@+id/name"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageview" />
+
+        </TableRow>
+        <TableRow
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AGE :"
+                android:textColor="#050505"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="till31/01/2019"
+                android:inputType="number"
+                android:id="@+id/age"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No :"
+                android:textColor="#050505"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="enter mob. no"
+                android:inputType="number"
+                android:id="@+id/num"
+                />
+        </TableRow>
+        <!--
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Id :"
+                android:textColor="#050505"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="email address"
+                android:inputType="textEmailAddress"
+                android:id="@+id/email"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address :"
+                android:textColor="#050505"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="enter ur address"
+                android:inputType="textMultiLine"
+                android:id="@+id/adrs"
+                />
+        </TableRow>
+        -->
+
+        <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Gender :"
+            android:textSize="20sp"
+            android:textColor="#050505"/>
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/rdgender"
+                android:onClick="gender"
+                >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                />
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Female" />
+            </RadioGroup>
+
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Language :"
+                android:textSize="20sp"
+                android:textColor="#050505"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hindi"
+                android:id="@+id/hindi"
+                android:onClick="hind"/>
+
+            <CheckBox
+                android:id="@+id/english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="eng"
+                android:text="English" />
+        </TableRow>
+        <TableRow
+            android:layout_marginLeft="40sp">
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Submit"
+                android:id="@+id/submit"
+                android:onClick="Submit"/>
+
+            <Button
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="10dp"
+
+                android:text="clickphoto"
+                android:id="@+id/clk"
+
+                />
+        </TableRow>
+        </TableLayout>
+
+
+
+
+</LinearLayout>
